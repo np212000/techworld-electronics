@@ -1,0 +1,200 @@
+/* Account page */
+.account-page
+{
+  min-height: calc(100vh - 150px); padding: 60px 0 80px; background: #f5f7fb;
+}
+
+/* account heading */
+.account-heading
+{
+  display: flex; align-items: flex-end; justify-content: space-between; gap: 25px;
+  margin-bottom: 35px;
+}
+
+.account-heading span 
+{
+  color: #6b7280; font-size: 13px; font-weight: 700; letter-spacing: 1.5px;
+}
+
+.account-heading h1
+{
+  margin: 5px 0 8px; color: #111827; font-size: 32px; font-weight: 700;
+}
+
+.account-heading p {margin: 0; color: #6b7280;}
+
+/* Logout button */
+.account-logout-btn
+{
+  padding: 11px 20px; border: 1px solid #dc3545; border-radius: 9px; background: #ffffff;
+  color: #dc3545; font-weight: 600; cursor: pointer; transition: all 0.2s ease;
+}
+
+.account-logout-btn:hover {background: #dc3545; color: #ffffff;}
+
+/*Account cards */
+.account-card
+{
+  margin-bottom: 24px; overflow: hidden; border-radius: 16px; background: #ffffff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.account-card-header {padding: 22px 25px; border-bottom: 1px solid #e5e7eb;}
+
+.account-card-header h2
+{
+  margin: 0; color: #111827; font-size: 18px; font-weight: 700;
+}
+
+/* Profile */
+.account-profile
+{
+  display: flex; align-items: center; gap: 20px; padding: 30px 25px;
+}
+
+.account-avatar
+{
+  width: 76px; height: 76px; flex-shrink: 0; display: flex; align-items: center;
+  justify-content: center; border-radius: 50%; background: #111827; color: #ffffff;
+  font-size: 30px; font-weight: 700;
+}
+
+.account-profile-info h3 {margin: 0 0 8px; color: #111827; font-size: 22px;}
+
+.account-profile-info p {margin: 0 0 12px; color: #6b7280;}
+
+.account-member-badge 
+{
+  display: inline-block; padding: 5px 10px; border-radius: 20px; background: #ecfdf5;
+  font-size: 12px; font-weight: 600;
+}
+
+/* Order history */
+.order-history {padding: 10px 25px;}
+
+.order-item
+{
+  display: flex; align-items: center; justify-content: space-between; padding: 18px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.order-item:last-child {border-bottom: none;}
+
+.order-item strong {color: #111827;}
+
+.order-item p 
+{
+  margin: 5px 0 0; color: #6b7280; font-size: 13px;
+}
+
+.order-item > span {color: #111827; font-weight: 700;}
+
+/* Empty account state */
+.account-empty {padding: 40px 25px; text-align: center;}
+
+.account-empty i 
+{
+  display: block; margin-bottom: 15px; color: #9ca3af; font-size: 45px;
+}
+
+.account-empty h3 {margin-bottom: 8px; color: #111827; font-size: 20px;}
+
+.account-empty p {margin-bottom: 20px; color: #6b7280;}
+
+/* Quick actions */
+.account-actions-card {padding-bottom: 10px;}
+
+.account-action
+{
+  display: flex; align-items: center; justify-content: space-between; gap: 15px;
+  padding: 17px 25px; border-bottom: 1px solid #e5e7eb; color: #374151; text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.account-action:last-child {border-bottom: none;}
+
+.account-action:hover {background: #f9fafb; color: #111827;}
+
+.account-action span {display: flex; align-items: center; gap: 12px;}
+
+.account-action span i {width: 20px; color: #111827; font-size: 18px;}
+
+.account-action > i {color: #9ca3af;}
+
+.account-action strong 
+{
+  min-height: 24px; padding: 3px 8px; border-radius: 20px; background: #111827; color: #ffffff;
+  font-size: 12px; text-align: center;
+}
+
+/* Account information */
+.account-info-box
+{
+  display: flex; gap: 15px; padding: 20px; border-radius: 14px; background: #eef2ff;
+}
+
+.account-info-box > i {color: #4f46e5; font-size: 24px;}
+
+.account-info-box h3 {margin: 0 0 6px; color: #111827; font-size: 16px;}
+
+.account-info-box p 
+{
+  margin: 0; color: #6b7280; font-size: 13px; line-height: 1.6;
+}
+
+/* Primary button */
+.account-primary-btn
+{
+  display: inline-block; padding: 11px 20px; border-radius: 9px; background: #111827;
+  color: #ffffff; font-weight: 600; text-decoration: none; transition: all 0.2s ease;
+}
+
+.account-primary-btn:hover
+{
+  background: #000000; color: #ffffff; transform: translateY(-1px);
+}
+
+/* Login required */
+.account-login-required
+{
+  max-width: 550px; margin: 60px auto; padding: 60px 30px; border-radius: 18px;
+  background: #ffffff; text-align: center; box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.account-login-required > i
+{
+  display: block; margin-bottom: 18px; color: #6b7280; font-size: 50px;
+}
+
+.account-login-required h1 {margin-bottom: 10px; color: #111827;}
+
+.account-login-required p {margin-bottom: 25px; color: #6b7280;}
+
+/* rsponsive Design */
+@media (max-width : 767px)
+{
+  .account-page {padding: 40px 0 60px;}
+
+  .account-heading {align-items: flex-start; flex-direction: column;}
+
+  .account-heading h1 {font-size: 27px;}
+
+  .account-logout-btn {width: 100%;}
+
+  .account-profile {align-items: flex-start;}
+
+  .account-avatar {width: 62px; height: 62px; font-size: 25px;}
+
+  .account-profile-info h3 {font-size: 19px;}
+}
+
+@media (max-width : 480px)
+{
+  .account-profile {gap: 14px; padding: 25px 18px;}
+
+  .account-card-header {padding: 19px 18px;}
+
+  .account-action {padding: 16px 18px;}
+
+  .order-history {padding: 10px 18px;}
+}

@@ -1,0 +1,209 @@
+/* ==============================================================================================
+Order Confirmation
+=============================================================================================*/
+.confirmation-page
+{
+  min-height: calc(100vh - 150px); padding: 60px 0 80px; background: #f5f7fb;
+}
+
+.confirmation-wrapper {max-width: 850px; margin: 0 auto; text-align: center}
+
+/* Success icon */
+.confirmation-success-icon 
+{
+  width: 82px; height: 82px; margin: 0 auto 20px; display: flex; align-items: center;
+  justify-content: center; border-radius: 50%; background: #dcfce7; color: #16a34a;
+  font-size: 42px;
+}
+
+.confirmation-label
+{
+  color: #16a34a; font-size: 13px; font-weight: 800; letter-spacing: 1.5px;
+}
+
+.confirmation-wrapper > h1 
+{
+  margin: 8px 0 12px; color: #111827; font-size: 34px; font-weight: 700;
+}
+
+.confirmation-message
+{
+  max-width: 600px; margin: 0 auto 25px; color: #6b7280; line-height: 1.7;
+}
+
+/* Order ID */
+.confirmation-order-id
+{
+  display: inline-flex; align-items: center; gap: 12px; margin-bottom: 30px; padding: 9px 15px;
+  border-radius: 8px; background: #ffffff; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.confirmation-order-id span {color: #6b7280; font-size: 13px;}
+
+.confirmation-order-id strong {color: #111827; font-size: 13px;}
+
+/*Main order card */
+.confirmation-card 
+{
+  overflow: hidden; margin-bottom: 25px; border-radius: 16px; background: #ffffff; 
+  text-align: left; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.confirmation-card-header
+{
+  display: flex; align-items: center; justify-content: space-between; gap: 15px;
+  padding: 22px 25px; border-bottom: 1px solid #efe7eb;
+}
+
+.confirmation-card-header h2
+{
+  margin: 0; color: #111827; font-size: 19px; font-weight: 700;
+}
+
+.confirmation-card-header > span {color: #6b7280; font-size: 13px;}
+
+/* Items */
+.confirmation-items {padding: 8px 25px;}
+
+.confirmation-item
+{
+  display: flex; align-items: center; gap: 15px; padding: 17px 0; 
+  border-bottom: 1px solid #efe7eb;
+}
+
+.confirmation-item:last-child {border-bottom: none;}
+
+.confirmation-item img 
+{
+  width: 65px; height: 65px; object-fit: contain; border-radius: 10px; background: #f8fafc;
+}
+
+.confirmation-item-info {flex: 1;}
+
+.confirmation-item-info h3
+{
+  margin: 0 0 5px; color: #111827; font-size: 14px; font-weight: 600;
+}
+
+.confirmation-item-info p {margin: 0; color: #6b7280; font-size: 12px;}
+
+.confirmation-item > strong {color: #111827; font-size: 14px;}
+
+/* Price */
+.confirmation-price {padding: 20px 25px; border-top: 1px solid #efe7eb;}
+
+.confirmation-price > div 
+{
+  display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;
+  color: #6b7280; font-size: 14px;
+}
+
+.confirmation-price > div strong {color: #374151;}
+
+.confirmation-price .confirmation-total
+{
+  margin: 18px 0 0; padding-top: 17px; border: 1px solid #e5e7eb; color: #111827;
+  font-size: 17px;
+}
+
+.confirmation-total strong {color: #111827 !important; font-size: 21px;}
+
+/* Information cards */
+.confirmation-info-row {text-align: left;}
+
+.confirmation-info-card 
+{
+  height: 100%; display: flex; align-items: flex-start; gap: 15px; padding: 22px;
+  border-radius: 15px; background: #ffffff; box-shadow: 0 7px 25px rgba(0, 0, 0, 0.05);
+}
+
+.confirmation-info-card > i {color: #111827; font-size: 25px;}
+
+.confirmation-info-card h3
+{
+  margin:  0 0 9px; color: #111827; font-size: 16px;
+}
+
+.confirmation-info-card p 
+{
+  margin: 0; color: #6b7280; font-size: 13px; line-height: 1.7;
+}
+
+.paid-status {color: #16a34a; font-weight: 700;}
+
+/* Status */
+.confirmation-status
+{
+  display: flex; align-items: center; gap: 15px; margin-top: 25px; padding: 18px 20px;
+  border: 1px solid #bbf7d0; border-radius: 12px; background: #f0fdf4; text-align: left;
+}
+
+.status-icon
+{
+  width: 42px; height: 42px; flex-shrink: 0; display: flex; align-items: center;
+  justify-content: center; border-radius: 50%; background: #dcfce7; color: #16a34a;
+  font-size: 20px;
+}
+
+.confirmation-status strong {color: #166534; font-size: 14px;}
+
+.confirmation-status p {margin: 3px 0 0; color: #4b5563; font-size: 12px;}
+
+/* Buttons */
+.confirmation-actions 
+{
+  display: flex; justify-content: center; gap: 12px; margin-top: 30px;
+}
+
+.confirmation-primary-btn, .confirmation-secondary-btn
+{
+  display: inline-block; padding: 12px 20px; border-radius: 9px; font-size: 14px;
+  font-weight: 600; text-decoration: none; transition: all 0.2s ease;
+}
+
+.confirmation-primary-btn {background: #111827; color: #ffffff;}
+
+.confirmation-primary-btn:hover
+{
+  background: #000000; color: #ffffff; transform: translateY(-1px);
+}
+
+.confirmation-secondary-btn
+{
+  border: 1px solid #d1d5db; background: #ffffff; color: #374151;
+}
+
+.confirmation-secondary-btn:hover {border-color: #111827; color: #111827;}
+
+/* ===========================================================================================
+Responsive Design
+==========================================================================================*/
+@media (max-width : 767px)
+{
+  .confirmation-page {padding: 40px 0 60px;}
+
+  .confirmation-wrapper > h1 {font-size: 27px;}
+
+  .confirmation-card-header {padding: 19px;}
+
+  .confirmation-items {padding: 8px 19px;}
+
+  .confirmation-price {padding: 19px;}
+
+  .confirmation-item {gap: 10px;}
+
+  .confirmation-item img {width: 55px; height: 55px;}
+
+  .confirmation-actions {flex-direction: column;}
+
+  .confirmation-primary-btn, .confirmation-secondary-btn {width: 100%;}
+}
+
+@media (max-width : 480px)
+{
+  .confirmation-success-icon {width: 68px; height: 68px; font-size: 34px;}
+
+  .confirmation-order-id {flex-direction: column; gap: 3px;}
+
+  .confirmation-info-card {padding: 18px;}
+}

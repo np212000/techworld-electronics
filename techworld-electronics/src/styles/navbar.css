@@ -1,0 +1,80 @@
+.tech-navbar
+{
+  background: #07111f; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding: 14px 0;
+}
+
+.tech-logo
+{
+  color: #ffffff !important; font-size: 1.45rem; font-weight: 800; letter-spacing: -0.7px; 
+  text-decoration: none;
+}
+
+.tech-logo span {color: #38bdf8;}
+
+.tech-navbar .navbar-nav {gap: 8px;}
+
+.tech-navbar .nav-link
+{
+  padding: 8px 12px !important; color: #94a3b8 !important; font-size: 0.83rem;
+  font-weight: 600; transition: 0.3s ease;
+}
+
+.tech-navbar .nav-link:hover, .tech-navbar .nav-link.active
+{
+  color: #ffffff !important; 
+}
+
+.navbar-actions
+{
+  display: flex; align-items: center; gap: 8px;
+}
+
+.nav-action
+{
+  position: relative; width: 38px; height: 38px; display: flex; align-items: center;
+  justify-content: center; border-radius: 50%; color: #cbd5e1; font-size: 1rem;
+  text-decoration: none; transition: 0.3s ease;
+}
+
+.nav-action:hover
+{
+  background: rgba(255, 255, 255, 0.08); color: #ffffff;
+}
+
+.nav-count
+{
+  position: absolute; top: -2px; right: -2px; min-width: 17px; display: flex; align-items: center;
+  justify-content: center; padding: 0 4px; border-radius: 50px; background: #2563eb;
+  color: #ffffff; font-size: 0.58rem; font-weight: 800;
+}
+
+.nav-login-btn
+{
+  display: inline-flex; align-items: center; gap: 6px; margin-left: 5px; padding: 8px 14px;
+  border-radius: 7px; background: #2563eb; color: #ffffff; font-size: 0.78rem; font-weight: 700;
+  text-decoration: none; transition: 0.3s ease;
+}
+
+.nav-login-btn:hover
+{
+  background: #1d4ed8; color: #ffffff; transform: translateY(-1px);
+}
+
+.navbar-toggler {border-color: rgba(255, 255, 255, 0.2) !important;}
+
+.navbar-toggler:focus {box-shadow: none !important;}
+
+@media (max-width : 991px)
+{
+  .navbar-actions {margin-top: 15px; padding-top: 15px; 
+  border-top: 1px solid rgba(255, 255, 255, 0.08);}
+
+  .nav-login-btn {margin-left: 5px;}
+}
+
+@media (max-width : 575px)
+{
+  .tech-navbar {padding: 11px 0;}
+
+  .navbar-actions {justify-content: flex-start;}
+}

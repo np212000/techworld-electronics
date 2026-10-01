@@ -1,0 +1,158 @@
+/*==============================================================================================
+About Page
+===============================================================================================*/
+.about-page {background: #ffffff;}
+
+/*=============================================================================================
+Hero
+===========================================================================================*/
+
+.about-hero {padding: 90px 0; background: #111827; color: #ffffff;}
+
+.about-hero-content {max-width: 760px;}
+
+.about-hero-content > span
+{
+  color: #9ca3af; font-size: 13px; font-weight: 700; letter-spacing: 1.8px;
+}
+
+.about-hero-content h2
+{
+  margin: 12px 0 20px; font-size: 52px; line-height: 1.12; font-weight: 800;
+}
+
+.about-hero-content p 
+{
+  max-width: 650px; margin: 0; color: #d1d5db; font-size: 17px; line-height: 1.8;
+}
+
+/*=========================================================================================
+Common
+========================================================================================*/
+.section-space {padding: 85px 0;}
+
+.about-section-label 
+{
+  color: #6b7280; font-size: 12px; font-weight: 800; letter-spacing: 1.6;
+}
+
+.about-intro-content h2, .about-section-heading h2
+{
+  margin: 10px 0 18px; color: #111827; font-size: 36px; line-height: 1.2; font-weight: 750;
+}
+
+.about-intro-content p
+{
+  margin-bottom: 15px; color: #6b7280; line-height: 1.8;
+}
+
+/*========================================================================================
+Intro Visual
+===================================================================================*/
+.about-visual
+{
+  min-height: 370px; display: flex; flex-direction: column; align-items: center;
+  justify-content: center; padding: 45px; border-radius: 22px; background: #f3f4f6;
+  text-align: center;
+}
+
+.about-visual-icon
+{
+  width: 90px; height: 90px; margin-bottom: 25px; display: flex; align-items: center;
+  justify-content: center; border-radius: 22px; background: #111827; color: #ffffff;
+  font-size: 42px;
+}
+
+.about-visual h3 {margin-bottom: 10px; color: #111827; font-size: 24px;}
+
+.about-visual p
+{
+  max-width: 420px; margin: 0; color: #6b7280; line-height: 1.7;
+}
+
+/*==========================================================================================
+Features 
+==================================================================================*/
+.about-features {background: #f8fafc;}
+
+.about-section-heading {max-width: 650px;}
+
+.about-section-heading > p {margin: 0; color: #6b7280;}
+
+.about-feature-card
+{
+  height: 100%; padding: 28px; border: 1px solid#e5e7eb; border-radius: 15px;
+  background: #ffffff; transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-feature-card:hover
+{
+  transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+.about-feature-icon
+{
+  width: 48px; height: 48px; margin-bottom: 20px; display: flex; align-items: center;
+  justify-content: center; border-radius: 12px; background: #111827; color: #ffffff;
+  font-size: 20px;
+}
+
+.about-feature-card h3 {margin-bottom: 10px; color: #111827; font-size: 17px;}
+
+.about-feature-card p {margin: 0; color: #6b7280; font-size: 13px; line-height: 1.7;}
+
+/*======================================================================================
+Mission
+===================================================================================*/
+.about-mission-box
+{
+  display: flex; align-items: flex-start; gap: 25px; padding: 40px; border-radius: 20px;
+  background: #111827; color: #ffffff;
+}
+
+.about-mission-icon
+{
+  width: 60px; height: 60px; flex-shrink: 0; display: flex; align-items: center;
+  justify-content: center; border-radius: 15px; background: #ffffff; color: #111827;
+  font-size: 25px;
+}
+
+.about-mission-box .about-section-label
+{
+  color: #9ca3af;
+}
+
+.about-mission-box h2 {margin: 8px 0 12px; font-size: 28px;}
+
+.about-mission-box p
+{
+  max-width: 700px; margin: 0; color: #d1d5db; line-height: 1.8;
+}
+
+/*=============================================================================================
+Responsive
+======================================================================================*/
+
+@media (max-width : 767px)
+{
+  .about-hero {padding: 65px 0;}
+
+  .about-hero-content h2 {font-size: 38px;}
+
+  .about-hero-content p {font-size: 15px;}
+
+  .section-space {padding: 60px 0;}
+
+  .about-intro-content h2, .about-section-heading h2 {font-size: 30px;}
+
+  .about-visual {min-height: 300px; padding: 30px;}
+
+  .about-mission-box {flex-direction: column; padding: 30px;}
+}
+
+@media (max-width : 480px)
+{
+  .about-hero-content h1 {font-size: 32px;}
+
+  .about-feature-card {padding: 23px;}
+}
